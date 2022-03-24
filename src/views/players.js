@@ -12,5 +12,14 @@ export default function Players() {
     fetchData();
   }, []);
 
-  return <div>Players </div>;
+  return (
+    <div>
+      <div>This Years Players </div>
+      <div>
+        {players.map((player) => (
+          <p key={player.id}>{player.name}</p>
+        ))}{' '}
+      </div>
+    </div>
+  );
 }
