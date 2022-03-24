@@ -17,11 +17,11 @@ export default function Players() {
     <div>
       <div>This Years Players </div>
       <div>
-        <Link>
-          {players.map((player) => (
+        {players.map((player) => (
+          <Link key={player.id} to={`/player/${player.id}`}>
             <p key={player.id}>{player.name}</p>
-          ))}{' '}
-        </Link>
+          </Link>
+        ))}{' '}
       </div>
     </div>
   );
