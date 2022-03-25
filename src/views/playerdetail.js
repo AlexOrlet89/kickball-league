@@ -24,7 +24,10 @@ export default function PlayerDetail() {
     <div>
       <p>
         {' '}
-        Click <a href="/player">Here</a> to the Players{' '}
+        Click <a href="/player">Here</a> to return to the Players{' '}
+      </p>
+      <p>
+        Return to the <a href={`/team/${player.teams.id}`}>{player.teams.name}</a>
       </p>
       <h3>{player.name}</h3>
       <h2>{player.position}</h2>

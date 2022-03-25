@@ -5,6 +5,7 @@ import './App.css';
 import Main from './views/main';
 import PlayerDetail from './views/playerdetail';
 import Players from './views/players';
+import TeamDetail from './views/teamdetail';
 
 function App() {
   return (
@@ -23,6 +24,11 @@ function App() {
         <Switch>
           <Route exact path="/player/:id">
             <PlayerDetail />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route exact path="/team/:id">
+            <TeamDetail />
           </Route>
         </Switch>
         KICKBALL
