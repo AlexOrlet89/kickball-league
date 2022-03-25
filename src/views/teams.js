@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { getTeams } from '../services/fetchteams';
 
 export default function Teams() {
@@ -11,5 +12,17 @@ export default function Teams() {
     };
     fetchData();
   }, []);
-  return <div>Teams</div>;
+  return (
+    <div>
+      <h2>THE TEAMS</h2>
+      <div>
+        {' '}
+        {teams.map((team) => (
+          <Link key={team.id} to={`/team/${team.id}`}>
+            <p key={team.id}>{team.name}</p>
+          </Link>
+        ))}{' '}
+      </div>
+    </div>
+  );
 }
