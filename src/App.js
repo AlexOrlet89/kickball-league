@@ -6,6 +6,7 @@ import Main from './views/main';
 import PlayerDetail from './views/playerdetail';
 import Players from './views/players';
 import TeamDetail from './views/teamdetail';
+import Teams from './views/teams';
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
         <Switch>
           <Route exact path="/player/:id">
             <PlayerDetail />
+          </Route>
+        </Switch>
+        <Switch>
+          <Route exact path="/team">
+            <Teams />
           </Route>
         </Switch>
         <Switch>
