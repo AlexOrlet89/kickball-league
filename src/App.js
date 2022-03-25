@@ -5,7 +5,7 @@ import './App.css';
 import Main from './views/main';
 import PlayerDetail from './views/playerdetail';
 import Players from './views/players';
-import TeamDetail from './views/teamdetail';
+import TeamDetail from './views/Teamdetail';
 import Teams from './views/teams';
 
 function App() {
