@@ -8,7 +8,7 @@ export default function Players() {
     const fetchData = async () => {
       const data = await getPlayers();
       setPlayer(data);
-      console.log('players data', data);
+      // console.log('players data', data);
     };
     fetchData();
   }, []);

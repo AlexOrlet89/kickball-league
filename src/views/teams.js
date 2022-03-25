@@ -8,7 +8,7 @@ export default function Teams() {
     const fetchData = async () => {
       const data = await getTeams();
       setTeams(data);
-      console.log('teams data', data);
+      // console.log('teams data', data);
     };
     fetchData();
   }, []);
