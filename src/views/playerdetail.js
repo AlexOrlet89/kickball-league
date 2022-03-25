@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getPlayersById } from '../services/fetchplayers';
+import './playerdetail.css';
 
 export default function PlayerDetail() {
   const params = useParams();
@@ -17,7 +18,7 @@ export default function PlayerDetail() {
     fetchData();
   }, [params.id]);
 
-  if (loading) return <h1> Loading Player...</h1>;
+  if (loading) return <div className="loader"> Loading Player</div>;
   //   console.log(player);
 
   return (

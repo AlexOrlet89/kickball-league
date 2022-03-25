@@ -4,14 +4,20 @@ import { getTeams } from '../services/fetchteams';
 
 export default function Teams() {
   const [teams, setTeams] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
       const data = await getTeams();
       setTeams(data);
+      setLoading(false);
+
       // console.log('teams data', data);
     };
     fetchData();
   }, []);
+
+  if (loading) return <div className="loader"> Loading Teams...</div>;
+
   return (
     <div>
       <h2>THE TEAMS</h2>

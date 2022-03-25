@@ -17,7 +17,7 @@ export default function TeamDetail() {
     fetchData();
   }, [params.id]);
 
-  if (loading) return <h1> Loading Player...</h1>;
+  if (loading) return <div className="loader"> Loading Team...</div>;
 
   // console.log(team);
   // console.log(params.id);

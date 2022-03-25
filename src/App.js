@@ -16,28 +16,19 @@ function App() {
           <Route exact path="/">
             <Main />
           </Route>
-        </Switch>
-        <Switch>
           <Route exact path="/player">
             <Players />
           </Route>
-        </Switch>
-        <Switch>
           <Route exact path="/player/:id">
             <PlayerDetail />
           </Route>
-        </Switch>
-        <Switch>
           <Route exact path="/team">
             <Teams />
           </Route>
-        </Switch>
-        <Switch>
           <Route exact path="/team/:id">
             <TeamDetail />
           </Route>
         </Switch>
-        KICKBALL
       </div>
     </BrowserRouter>
   );
