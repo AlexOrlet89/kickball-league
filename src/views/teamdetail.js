@@ -46,6 +46,9 @@ export default function TeamDetail() {
           ))}
         </div>
       </div>
+      <p>
+        Click <a href="/team">Here</a> to return to the Teams
+      </p>
     </div>
   );
 }

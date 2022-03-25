@@ -23,6 +23,9 @@ export default function Players() {
           </Link>
         ))}{' '}
       </div>
+      <p>
+        Click <a href="/team">Here</a> to check out the Teams
+      </p>
     </div>
   );
 }
