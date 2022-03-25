@@ -8,7 +8,7 @@ export default function Main() {
         Click <a href="/teams">Here</a> to checkout the Teams{' '}
       </h4>
       <h4>
-        Click <a href="/players">Here</a> to checkout the Players{' '}
+        Click <a href="/player">Here</a> to checkout the Players{' '}
       </h4>
     </>
   );
